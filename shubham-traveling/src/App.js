@@ -1,39 +1,15 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { Button } from "@chakra-ui/react";
-import "./App.css";
-// import Package from "./pages/Package";
-//import Footer from "./components/Footer";
-// import Home from "./pages/Home";
-// import PackageDetails from "./pages/PackageDetails";
-// import Service from "./pages/Service";
-import Navbar from "./components/Navbar";
-// import Login from "./pages/Signin";
-// import SignupCard from "./pages/Signup";
-
-
+//import logo from './logo.svg';
+import './App.css';
+import Navbar from "./components/Navbar"
+import Footer from './components/Service/Footer';
+import HomeSearchComponent from './components/Service/HomeSearchComponent';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Link to="/">
-        <Button>Home</Button>
-      </Link>
-      <Link to="/package">
-        <Button>Package</Button>
-      </Link>
-      <Link to="/package/1">
-        <Button>Package Details</Button>
-      </Link>
-      <Link to="/service">
-        <Button>Support</Button>
-      </Link>
-      { <Routes>
-        
-      </Routes> }
-
-      <Footer/>
-
+      <Navbar />
+      < HomeSearchComponent />
+      < Footer />
     </div>
   );
 }
