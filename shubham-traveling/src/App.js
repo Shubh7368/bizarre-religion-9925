@@ -1,15 +1,17 @@
 //import logo from './logo.svg';
 import './App.css';
-import Navbar from "./components/Navbar"
-import Footer from './components/Service/Footer';
-import HomeSearchComponent from './components/Service/HomeSearchComponent';
+import Navbar from "./components/Navbar/Navbar"
+import Footer from './components/Footer/Footer';
+import HomeMidSec from './components/HomeMidSec';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      < HomeSearchComponent />
+      < Navbar />
+      < HomeMidSec />
       < Footer />
+      
     </div>
   );
 }
